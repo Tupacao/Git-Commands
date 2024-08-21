@@ -52,6 +52,7 @@ Uma **branch** no Git funciona como uma ramificação do código principal, perm
 | --- | --- |
 |` git branch -m nome-antigo nome-novo `| Altera o nome da branch localmente|
 |` git branch --set-upstream-to=origin/Repositorio-remoto Repositorio-local `| Conecta uma branch a outra, fazendo assim que ambas compartilhem os mesmos dados|
+|` git merge Nome-Branch `| Necessario estar na branch de destino para copiar os arquivos de uma branch para outra |
 
 
 **Comandos para excluir uma branch**
@@ -67,4 +68,8 @@ Uma **branch** no Git funciona como uma ramificação do código principal, perm
 | --- | --- |
 | ` git branch `| Lista todas as branch locais |
 | ` git switch Nome-da-Branch`| Muda para a branch desejada assim como o ` git checkout Nome-da-Branch` |
+
+## Recuperando commits antigos
+
+## Comandos extras
 
