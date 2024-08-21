@@ -43,7 +43,7 @@ Uma **branch** no Git funciona como uma ramificação do código principal, perm
 | Criação | Descrição |
 | --- | --- |
 | ` git branch Nome-nova-Branch `| Criar uma nova branch |
-| ` git checkout Nome-Branch" `| Mudar para uma branch já existente |
+| ` git checkout Nome-Branch" `| Muda para uma branch já existente |
 | ` git checkout -b Nome-nova-Branch `| Cria uma nova branch e mudar para a mesma |
 
 
