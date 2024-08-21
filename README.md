@@ -70,6 +70,28 @@ Uma **branch** no Git funciona como uma ramificação do código principal, perm
 | ` git switch Nome-da-Branch`| Muda para a branch desejada assim como o ` git checkout Nome-da-Branch` |
 
 ## Recuperando commits antigos
+> Está seção é voltada para quando desejamos voltar em algum ponto no processo de produção devido há algum erro, falha ou apenas para consultar
 
-## Comandos extras
+| Comandos | Descrição |
+| --- | --- |
+| ` git log `| Mostra todos os commits feitos na branch |
+| ` git checkout <commit-hash> `| Muda todos os arquivos para o commit solicitado |
 
+
+**Comandos <reset>**
+
+Tenha como exemplo está árvore de commits:
+`A -- B -- C -- D -- E (HEAD -> main)
+    (as letras são os <hash-code>)`
+
+`git reset --soft <hash-code-C>`
+> A -- B -- C (HEAD -> main)
+> Os commits realizados em D e E ainda estão presentes nos arquivos para sofrerem commit
+
+`git reset --mixed <hash-code-C>`
+> A -- B -- C (HEAD -> main)
+> Os commits realizados em D e E ainda estão presentes nos arquivos, mas estão em fase de stage e portanto não estão prontos para sofrerem commit
+
+`git reset --hard <hash-code-C>`
+> A -- B -- C (HEAD -> main)
+> Os commits realizados em D e E não estão presentes e são apagados **permanentemente**
